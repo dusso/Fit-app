@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fitness App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🏋️ Fitness Tracker</h1>
+  </header>
+
+  <main>
+    <form id="exercise-form">
+      <input type="text" id="name" placeholder="Nome do exercício" required />
+      <input type="text" id="category" placeholder="Categoria (ex: Cardio)" required />
+      <input type="number" id="duration" placeholder="Duração (min)" required />
+      <button type="submit">Adicionar</button>
+    </form>
+
+    <section id="exercise-list"></section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
