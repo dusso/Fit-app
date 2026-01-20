@@ -1,22 +1,30 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Fitness App</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FitApp - Fase 2</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <h1>🏋️ Fitness Tracker</h1>
+    <h1>🏋️ Meus Treinos</h1>
+    <select id="day-select">
+      <option value="segunda">Segunda</option>
+      <option value="terca">Terça</option>
+      <option value="quarta">Quarta</option>
+      <option value="quinta">Quinta</option>
+      <option value="sexta">Sexta</option>
+      <option value="sabado">Sábado</option>
+      <option value="domingo">Domingo</option>
+    </select>
   </header>
 
   <main>
     <form id="exercise-form">
-      <input type="text" id="name" placeholder="Nome do exercício" required />
-      <input type="text" id="category" placeholder="Categoria (ex: Cardio)" required />
-      <input type="number" id="duration" placeholder="Duração (min)" required />
-      <button type="submit">Adicionar</button>
+      <input type="text" id="name" placeholder="Nome do exercício" required>
+      <input type="text" id="muscle" placeholder="Grupo muscular" required>
+      <button type="submit">Adicionar exercício</button>
     </form>
 
     <section id="exercise-list"></section>
